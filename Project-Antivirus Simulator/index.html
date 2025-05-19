@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake Antivirus Simulator</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script defer src="script.js"></script>
+  
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="fake-av-window">
+      <h1><i class="fas fa-shield-virus"></i> SecureFast Antivirus</h1>
+      <div id="scan-section">
+        <p>Status: <span id="scan-status">Idle</span></p>
+        <button id="start-scan">Start Scan</button>
+        <div id="progress-bar"><div id="progress"></div></div>
+        <ul id="fake-files"></ul>
+        <div id="result" class="hidden">
+          <p><strong>⚠ 22 threats found!</strong></p>
+          <button id="buy-now">Buy Full Version to Remove Threats</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="educational-popup" class="hidden">
+      <h2>This Was a Simulation!</h2>
+      <p>This fake antivirus was designed to show how real scareware behaves. Real AVs do not push aggressive payment prompts or display fake threats. Stay safe online!</p>
+      <button onclick="location.reload()">Restart</button>
+    </div>
+  </div>
+</body>
+</html>
